@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@700&display=swap");
+/* mixins web */
+/* Default style */
 html {
+  width: 100vw;
   height: 100vh;
-  widows: 100vw;
-  overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+  html {
+    overflow: hidden;
+  }
+}
+html * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 html body {
   display: flex;
@@ -11,13 +24,17 @@ html body {
   background-image: linear-gradient(20deg, #e9defa 0%, #81817b 100%);
 }
 html body main {
-  height: 90vh;
   width: 100vw;
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 1000px) {
+  html body main {
+    height: 90vh;
+  }
+}
 html body main #inputs {
-  width: 60vw;
+  width: 50vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +43,7 @@ html body main #inputs {
   gap: 30px;
 }
 html body main #inputs #time-inputs {
-  width: 24vw;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -37,9 +54,9 @@ html body main #inputs #time-inputs select {
   width: 30%;
 }
 html body main #inputs input, html body main #inputs select {
+  width: 60%;
   font-family: "Noto Serif Telugu", serif;
   padding: 10px;
-  width: 40%;
   border-radius: 15px;
   outline: groove rgba(38, 50, 56, 0.6431372549);
   border: none;
@@ -51,7 +68,7 @@ html body main #inputs select {
 html body main #inputs input[type=button] {
   color: #263238;
   font-weight: 700;
-  font-size: 20px;
+  font-size: calc(1vw + 1vh);
   cursor: pointer;
 }
 html body main #inputs h1 {
@@ -60,8 +77,8 @@ html body main #inputs h1 {
   font-weight: 700;
 }
 html body main #inputs #resultado {
-  width: 40%;
-  height: 70px;
+  width: 60%;
+  height: 10%;
   background-color: #263238;
   outline: none;
   border-radius: 15px;
@@ -71,27 +88,77 @@ html body main #inputs #resultado {
 }
 html body main #inputs #resultado h2 {
   color: #fff;
-  font-weight: 3;
+  font-weight: 300;
+  font-size: calc(1vh + 1vw);
 }
 html body main #container-img {
-  width: 40vw;
+  display: grid;
+  place-items: center;
+  width: 50vw;
   height: 90vh;
 }
-html body main #container-img img {
-  height: 90%;
-  object-fit: cover;
-  margin: 0px 0px 100px 50px;
+html body main #container-img > img {
+  width: 80%;
+  object-fit: fill;
 }
 html body footer {
   height: 10vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 html body footer a {
-  margin-top: 8px;
   color: black;
+  width: 80%;
+}
+
+/* Mobile style */
+@media screen and (max-width: 1000px) {
+  html {
+    height: fit-content;
+  }
+  html body main {
+    width: 100vw;
+    flex-direction: column;
+  }
+  html body main #inputs {
+    height: 70vh;
+    width: 100vw;
+  }
+  html body main #inputs #resultado {
+    height: 10%;
+  }
+  html body main #container-img {
+    height: 30vh;
+    width: 100vw;
+  }
+  html body main #container-img > img {
+    width: 60%;
+  }
+  html body footer {
+    height: 20vh;
+    gap: 1vh;
+  }
+  html body footer a {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 800px) and (max-height: 600px) {
+  html body main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+  }
+  html body main #container-img {
+    display: none;
+  }
+  html body footer a {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
