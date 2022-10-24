@@ -42,9 +42,17 @@
         display: grid
         place-items: center
         border: 1px solid white
+        transition: height 1.5s, width 1.5s, visibility 0s
         h2
+            visibility: visible
             color: #fff
             font-weight: 300
             font-size: calc(1vh + 1vw)
+            transition: all 2.5s
+        .hidden
+            visibility: hidden
+            font-size: 0
     .hidden
-        display: none
+        visibility: hidden
+        width: 0
+        height: 0

@@ -6,13 +6,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <!-- Styles -->
         <link rel="icon" href="./styles/assets/carrinho.png" type="image/png">
         <link rel="stylesheet" href="./styles/style.css">
-        
+
         <!-- Scripts -->
-        <script src="./js/main.js" type='module' defer></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./scripts/main.js" type='module' defer></script>
 
         <!-- Titulo da página -->
         <title>Churrasco</title>
@@ -31,23 +31,25 @@
             <div class="inputs">
                 <h1>Churrascômetro</h1>
 
-                <input min=0 type="number" placeholder="Adultos">
-                <input min=0 type="number" placeholder="Crianças">
-
+                <input id="adults" min=0 type="number" placeholder="Adultos">
+                <input id="kids" min=0 type="number" placeholder="Crianças">
                 <!-- inputs de tempo do churras -->
                 <div class="time-inputs">
-                    <input min=0 type="number" placeholder="Duração">
-                    <select type="select" placeholder="Formato">
+
+                    <input id="timeDuration" min=0 type="number"
+                        placeholder="Duração">
+
+                    <select id="timeFormat" type="select" placeholder="Formato">
                         <option value="Horas">Horas</option>
                         <option value="Minutos">Minutos</option>
                     </select>
                 </div>
 
-                <input type="button" value="Calcular">
+                <input id="calcBTN" type="button" value="Calcular">
 
                 <!-- Container escondido do resultado -->
-                <div class="resultado hidden">
-                    <h2>Quantia</h2>
+                <div id="resultCont" class="resultado hidden">
+                    <h2 id="result" class="hidden"></h2>
                 </div>
             </div>
         </main>

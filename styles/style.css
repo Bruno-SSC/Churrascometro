@@ -90,14 +90,23 @@ html body main .inputs .resultado {
   display: grid;
   place-items: center;
   border: 1px solid white;
+  transition: height 1.5s, width 1.5s, visibility 0s;
 }
 html body main .inputs .resultado h2 {
+  visibility: visible;
   color: #fff;
   font-weight: 300;
   font-size: calc(1vh + 1vw);
+  transition: all 2.5s;
+}
+html body main .inputs .resultado .hidden {
+  visibility: hidden;
+  font-size: 0;
 }
 html body main .inputs .hidden {
-  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 html body footer {
   height: 10vh;
@@ -169,14 +178,23 @@ html body footer {
   display: grid;
   place-items: center;
   border: 1px solid white;
+  transition: height 1.5s, width 1.5s, visibility 0s;
 }
 .inputs .resultado h2 {
+  visibility: visible;
   color: #fff;
   font-weight: 300;
   font-size: calc(1vh + 1vw);
+  transition: all 2.5s;
+}
+.inputs .resultado .hidden {
+  visibility: hidden;
+  font-size: 0;
 }
 .inputs .hidden {
-  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .references {
