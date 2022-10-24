@@ -151,7 +151,6 @@ html body footer a {
     height: 100vh;
     display: grid;
     place-items: center;
-    border: 1px solid black;
   }
   html body main #container-img {
     display: none;
