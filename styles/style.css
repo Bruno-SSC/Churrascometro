@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(20deg, #e9defa 0%, #81817b 100%);
+}
+html body main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  html body main {
+    height: 90vh;
+  }
+}
+html body main .container-img {
+  display: grid;
+  place-items: center;
+  width: 50%;
+  height: 100%;
+}
+html body main .container-img > img {
+  width: 80%;
+  object-fit: fill;
+}
+html body main .inputs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+html body main .inputs h1 {
+  color: #263238;
+  font-family: "Noto Serif Telugu", serif;
+  font-weight: 700;
+}
+html body main .inputs .time-inputs {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+html body main .inputs .time-inputs input {
+  width: 60%;
+}
+html body main .inputs .time-inputs select {
+  width: 30%;
+}
+html body main .inputs input, html body main .inputs select {
+  width: 60%;
+  font-family: "Noto Serif Telugu", serif;
+  padding: 2%;
+  border-radius: 1em;
+  outline: groove rgba(38, 50, 56, 0.6431372549);
+  border: none;
+  background-color: #e0e0e0;
+}
+html body main .inputs select {
+  color: rgba(38, 50, 56, 0.6431372549);
+}
+html body main .inputs input[type=button] {
+  color: #263238;
+  font-weight: 700;
+  font-size: calc(1vw + 1vh);
+  cursor: pointer;
+}
+html body main .inputs .resultado {
+  width: 60%;
+  height: 10%;
+  background-color: #263238;
+  outline: none;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+}
+html body main .inputs .resultado h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: calc(1vh + 1vw);
+}
+html body main .inputs .hidden {
+  display: none;
+}
+html body footer {
+  height: 10vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container-img {
+  display: grid;
+  place-items: center;
+  width: 50%;
+  height: 100%;
+}
+.container-img > img {
+  width: 80%;
+  object-fit: fill;
+}
+
+.inputs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.inputs h1 {
+  color: #263238;
+  font-family: "Noto Serif Telugu", serif;
+  font-weight: 700;
+}
+.inputs .time-inputs {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputs .time-inputs input {
+  width: 60%;
+}
+.inputs .time-inputs select {
+  width: 30%;
+}
+.inputs input, .inputs select {
+  width: 60%;
+  font-family: "Noto Serif Telugu", serif;
+  padding: 2%;
+  border-radius: 1em;
+  outline: groove rgba(38, 50, 56, 0.6431372549);
+  border: none;
+  background-color: #e0e0e0;
+}
+.inputs select {
+  color: rgba(38, 50, 56, 0.6431372549);
+}
+.inputs input[type=button] {
+  color: #263238;
+  font-weight: 700;
+  font-size: calc(1vw + 1vh);
+  cursor: pointer;
+}
+.inputs .resultado {
+  width: 60%;
+  height: 10%;
+  background-color: #263238;
+  outline: none;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+}
+.inputs .resultado h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: calc(1vh + 1vw);
+}
+.inputs .hidden {
+  display: none;
+}
+
+.references {
+  width: 80%;
+  text-align: center;
+}
+.references a {
+  display: block;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    height: fit-content;
+    overflow: scroll;
+  }
+  html body main {
+    width: 100vw;
+    flex-direction: column;
+  }
+  html body main .inputs {
+    height: 70vh;
+    width: 100vw;
+  }
+  html body main .inputs .resultado {
+    height: 10%;
+  }
+  html body main .container-img {
+    height: 30vh;
+    width: 100vw;
+  }
+  html body main .container-img > img {
+    width: 60%;
+  }
+  html body footer .references a {
+    font-size: 2vh;
+  }
+}
+/* For when the virtual keyboard is displayed on mobile */
+@media screen and (max-width: 800px) and (max-height: 600px) {
+  html body main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  html body main .container-img {
+    display: none;
+  }
+  html body footer .references a {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

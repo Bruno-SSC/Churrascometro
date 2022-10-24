@@ -12,7 +12,7 @@ Aplicação web com finalidade de calcular a quantia de carne necessária para u
 ---
 <h3 align="center"> Design 📝 </h3>
 
-<div height="590em"><img src="./images/desktop-design.png" alt="imagem"></div>
+<div height="590em"><img src="./assets/desktop-design.png" alt="imagem"></div>
 
 <h3 align="center"> Tecnologias utilizadas 🤖 </h3>
 

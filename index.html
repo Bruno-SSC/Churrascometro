@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <!-- Metas -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <!-- Styles -->
-        <link rel="icon" href="./assets/carrinho.png" type="image/png">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./styles/assets/carrinho.png" type="image/png">
+        <link rel="stylesheet" href="./styles/style.css">
+        
         <!-- Scripts -->
-        <script src="main.js" type='module' defer></script>
+        <script src="./js/main.js" type='module' defer></script>
+
+        <!-- Titulo da página -->
         <title>Churrasco</title>
+
     </head>
     <body>
         <main>
-            <!-- Container da imagem - esquerdo -->
-            <div id="container-img">
-                <img src="./assets/Frozen food-pana.svg" alt="">
+
+            <!-- Container da imagem -->
+            <div class="container-img">
+                <img src="./styles/assets/Frozen food-pana.svg" alt="">
             </div>
-            <!-- Container dos inputs - direito -->
-            <div id="inputs">
+
+            <!-- Container dos inputs -->
+
+            <div class="inputs">
                 <h1>Churrascômetro</h1>
+
                 <input min=0 type="number" placeholder="Adultos">
                 <input min=0 type="number" placeholder="Crianças">
-                <div id="time-inputs">
+
+                <!-- inputs de tempo do churras -->
+                <div class="time-inputs">
                     <input min=0 type="number" placeholder="Duração">
-                    <select type="select" placeholder="formato">
+                    <select type="select" placeholder="Formato">
                         <option value="Horas">Horas</option>
                         <option value="Minutos">Minutos</option>
                     </select>
                 </div>
+
                 <input type="button" value="Calcular">
+
                 <!-- Container escondido do resultado -->
-                <div id="resultado">
+                <div class="resultado hidden">
                     <h2>Quantia</h2>
                 </div>
             </div>
         </main>
         <footer>
-            <a href="https://storyset.com/shopping">Shopping illustrations by
-                Storyset</a>
-            <a
-                href="https://www.flaticon.com/br/icones-gratis/comercio-e-compras"
-                title="comércio e compras ícones">Comércio e compras ícones
-                criados
-                por Freepik - Flaticon</a>
+            <div class="references">
+                <a
+                    href="https://storyset.com/shopping">Shopping illustrations
+                    by
+                    Storyset</a>
+                <a
+                    href="https://www.flaticon.com/br/icones-gratis/comercio-e-compras"
+                    title="comércio e compras ícones">Comércio e compras ícones
+                    criados
+                    por Freepik - Flaticon</a>
+            </div>
         </footer>
     </body>
 </html>

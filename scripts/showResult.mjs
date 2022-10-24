@@ -1,4 +1,4 @@
-import { resultado } from "../main.js"
+import { resultado } from "./main.js"
 
 export default function showResult() {
 

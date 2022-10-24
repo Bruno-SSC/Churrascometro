@@ -1,4 +1,4 @@
-import { resultado } from "../main.js"
+import { resultado } from "./main.js"
 
 import People from "./People.mjs"
 import showResult from "./showResult.mjs"
