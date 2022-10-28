@@ -1,58 +1,59 @@
-.inputs
-    width: 50%
-    height: 100%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    gap: 30px
-    h1
-        color: #263238
-        font-family: 'Noto Serif Telugu', serif
-        font-weight: 700
-    .time-inputs
-        width: 60%
+main
+    .inputs
+        width: 50%
+        height: 100%
         display: flex
-        justify-content: space-between
-        input
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 30px
+        h1
+            color: #263238
+            font-family: 'Noto Serif Telugu', serif
+            font-weight: 700
+        .time-inputs
             width: 60%
+            display: flex
+            justify-content: space-between
+            input
+                width: 60%
+            select
+                width: 30%
+        input, select
+            width: 60%
+            font-family: 'Noto Serif Telugu', serif
+            padding: 2%
+            border-radius: 1em
+            outline: groove #263238a4
+            border: none
+            background-color: #e0e0e0
         select
-            width: 30%
-    input, select
-        width: 60%
-        font-family: 'Noto Serif Telugu', serif
-        padding: 2%
-        border-radius: 1em
-        outline: groove #263238a4
-        border: none
-        background-color: #e0e0e0
-    select
-        color: #263238a4
-    input[type='button']
-        color: #263238
-        font-weight: 700
-        font-size: calc( 1vw + 1vh )
-        cursor: pointer
-    .resultado
-        width: 60%
-        height: 10%
-        background-color: #263238
-        outline: none
-        border-radius: 15px
-        display: grid
-        place-items: center
-        border: 1px solid white
-        transition: height 1.5s, width 1.5s, visibility 0s
-        h2
-            visibility: visible
-            color: #fff
-            font-weight: 300
-            font-size: calc(1vh + 1vw)
-            transition: all 2.5s
+            color: #263238a4
+        input[type='button']
+            color: #263238
+            font-weight: 700
+            font-size: calc( 1vw + 1vh )
+            cursor: pointer
+        .resultado
+            width: 60%
+            height: 10%
+            background-color: #263238
+            outline: none
+            border-radius: 15px
+            display: grid
+            place-items: center
+            border: 1px solid white
+            transition: height 1.5s, width 1.5s, visibility 0s
+            h2
+                visibility: visible
+                color: #fff
+                font-weight: 300
+                font-size: calc(1vh + 1vw)
+                transition: all 2.5s
+            .hidden
+                visibility: hidden
+                font-size: 0
         .hidden
             visibility: hidden
-            font-size: 0
-    .hidden
-        visibility: hidden
-        width: 0
-        height: 0
+            width: 0
+            height: 0
