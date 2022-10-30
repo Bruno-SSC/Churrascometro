@@ -26,11 +26,12 @@ calcBTN.addEventListener('click', () => {
 
     const adults = queryS("#adults").value
     const kids = queryS("#kids").value
-    const timeDuration = queryS("#timeDuration").value
+    let timeDuration = queryS("#timeDuration").value
     const timeFormat = queryS("#timeFormat").value
 
     if (timeFormat == 'Minutos') {
         timeDuration = (timeDuration / 60)
+        console.log('convertido')
     }
 
     if (adults == '' | kids == '') {
